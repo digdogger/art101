@@ -11,7 +11,7 @@ body {
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1,h2,h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
@@ -45,7 +45,8 @@ h3 {
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-
+  align-items: center;
+  align-content: center;
   padding: 10px;
   margin-bottom: 10px;
   border: solid 1px #888;
