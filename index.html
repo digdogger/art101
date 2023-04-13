@@ -22,8 +22,12 @@ p {
 	font-size: 125%;
 	text-align: center;
 	color: rgb(0, 0, 0);
+	margin-bottom: 40px ;
+
 
 }
+
+
 </style>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
@@ -32,13 +36,19 @@ p {
 			<h1>WELCOME TO THE SLIMEFEST</h1>
 			<div class="minor-section">
 					<!-- Note that all filenames use lowercase and no spaces -->
+					<!--<form onsubmit="passFunction()"//
+						<label for="password">Password:</label><br>
+						<input type="text" id="pass" name="pass" required><br><br>
+						<input type="submit" value="Submit"
+					</form> -->
 					<img class="cat-photo" src="./img/possum.jpg">
 					<h2>Keep it Real, Keep it Juicy</h2>
-					<p>call me newt. but my friends call me soupton. </p>
-					<form>
-			
-						<input type="button" value="CLICK ME" height="25px" onclick="msg()">
-					</form>
+					<h3>call me newt. but my friends call me soupton. </h3>
+					<div class="center">
+						<button class="button" onclick="msg()">CLICK ME</button>
+					</div>
+					
+					
 			</div>
 
 		</section>
@@ -48,7 +58,11 @@ p {
 	</main>
 	<script>
 		function msg() {
-		  alert("<3 <3 <3");
+		  alert("<3 OwO love u <3");
+		}
+		function passFunction() {
+
+
 		}
 	</script>
 </body>

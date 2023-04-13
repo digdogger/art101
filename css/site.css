@@ -10,7 +10,7 @@ body {
 
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
+h1,h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -20,6 +20,9 @@ h1 {
   word-spacing: 5px;
   font-size: 300%;
   color: #a30808;
+  margin-top: 25px;
+  width: fit-content;
+  margin-left: 31%;
 }
 h2 {
   text-align: center;
@@ -27,13 +30,17 @@ h2 {
   word-spacing: 3px;
   font-size: 250%;
   color: #000000;
+  margin: 20px ;
 }
 h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  letter-spacing: 3px;
-  word-spacing: 3px;
-  font-size: 220%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 125%;
   color: #000000;
+  margin-bottom: 55px;
+  margin-top: -15px;
 }
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
@@ -47,8 +54,35 @@ h3 {
 .minor-section {
   align-items: center;
   align-content: center;
-  padding: 10px;
   margin-bottom: 10px;
   border: solid 1px #888;
   background-color: #A3C9A8;
+
+}
+.center {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+}
+.button {
+  background-color: #999999; 
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 15px;
+  box-shadow: 0 9px #727272;
+  margin-left: 45% ;
+}
+
+.button:hover {background-color: #d7c3c3}
+
+.button:active {
+  background-color: #6e6e6e;
+  box-shadow: 0 5px #414141;
+  transform: translateY(4px);
 }
