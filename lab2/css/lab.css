@@ -6,8 +6,9 @@ body {
 }
 
 header {
-  background: #ffd2f1;
+  background: #ffc4ec;
   height: 100px;
+  cursor: cell;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h1 {
 }
 h2 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
+
 
 }
 
@@ -36,6 +37,7 @@ h4 {
   text-align: center;
   word-spacing: 5px;
   font-size: 55px;
+  color: rgb(255, 255, 255);
 }
 main {
   padding-right: 55px;
@@ -44,6 +46,7 @@ main {
   margin-bottom: -9000px;
   float: left;
   width: 100%;
+  cursor: cell;
 }
 
 nav {
@@ -55,6 +58,7 @@ nav {
   margin-left: -450px;
   background: #ffe6f7;
   height: 100%;
+  cursor: cell;
 }
 
 
@@ -74,6 +78,7 @@ nav {
 
 p {
   color: #555;
+
 }
 
 nav ul {
@@ -81,11 +86,20 @@ nav ul {
   margin: 0;
   padding-left: 20px;
   padding-bottom: 5px;
+  cursor: crosshair;
 }
 
 nav ul a {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 25px;
   color: rgb(88, 0, 57);
+  cursor: crosshair;
+}
+
+.turnip-photo {
   
+  margin-left: 26%;
+  margin-top: 5px;
+  max-width: 500px;
+  border: inset 4px #4f1b51;
 }
