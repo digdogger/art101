@@ -1,56 +1,73 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
-
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 body {
   margin:0;
   padding:0;
-  font-family: Sans-Serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 1.5em;
 }
 
 header {
-  background: #ccc;
+  background: #ffd2f1;
   height: 100px;
 }
 
-header h1 {
-  margin: 0;
-  padding-top: 15px;
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 0;
+  padding-top: 35px;
+  text-align: center;
+  word-spacing: 5px;
+  text-decoration: underline;
+}
+h2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+
 }
 
+h3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h4 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 0;
+  padding-top: 35px;
+  text-align: center;
+  word-spacing: 5px;
+  font-size: 55px;
+}
 main {
+  padding-right: 55px;
+  padding-left: 55px;
   padding-bottom: 10010px;
-  margin-bottom: -10000px;
+  margin-bottom: -9000px;
   float: left;
   width: 100%;
 }
 
 nav {
+  padding-top: 30px;
   padding-bottom: 10010px;
-  margin-bottom: -10000px;
+  margin-bottom: -9000px;
   float: left;
-  width: 230px;
-  margin-left: -230px;
-  background: #eee;
+  width: 450px;
+  margin-left: -450px;
+  background: #ffe6f7;
+  height: 100%;
 }
 
-footer {
-  clear: left;
-  width: 100%;
-  background: #ccc;
-  text-align: center;
-  padding: 4px 0;
-}
 
 #wrapper {
   overflow: hidden;
 }
       
 #content {
-  margin-right: 230px; /* Same as 'nav' width */
+  margin-right: 450px;
 }
 
-.innertube {
+
+.cushion {
   margin: 15px; /* Padding for content */
   margin-top: 0;
 }
@@ -62,11 +79,13 @@ p {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 20px;
+  padding-bottom: 5px;
 }
 
 nav ul a {
-  color: darkgreen;
-  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  color: rgb(88, 0, 57);
+  
 }
-
