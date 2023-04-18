@@ -1,52 +1,159 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<title> Lab 2 </title>
+		<style type="text/css">
+		
+			body {
+				margin:0;
+				padding:0;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				line-height: 1.5em;
+			}
+			
+			header {
+				background: #ffd2f1;
+				height: 100px;
+			}
 
-	<!-- Use UTF character set, a good idea with any webpage -->
-  	<meta charset="UTF-8" />
-	<!-- Set viewport so page remains consistently scaled w narrow devices -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			h1 {
+				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				margin-top: 0;
+				padding-top: 35px;
+				text-align: center;
+				word-spacing: 5px;
+				text-decoration: underline;
+			}
+			h2 {
+				font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				text-align: center;
+
+			}
+
+			h3 {
+				font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		
+			}
+
+			h4 {
+				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				margin-top: 0;
+				padding-top: 35px;
+				text-align: center;
+				word-spacing: 5px;
+				font-size: 55px;
+			}
+			main {
+				padding-right: 55px;
+				padding-left: 55px;
+				padding-bottom: 10010px;
+				margin-bottom: -9000px;
+				float: left;
+				width: 100%;
+			}
+			
+			nav {
+				padding-top: 30px;
+				padding-bottom: 10010px;
+				margin-bottom: -9000px;
+				float: left;
+				width: 450px;
+				margin-left: -450px;
+				background: #ffe6f7;
+				height: 100%;
+			}
+			
 	
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/lab.css">
+			#wrapper {
+				overflow: hidden;
+			}
+						
+			#content {
+				margin-right: 450px;
+			}
+
+
+		    .cushion {
+				margin: 15px; /* Padding for content */
+				margin-top: 0;
+			}
+		
+			p {
+				color: #555;
+			}
 	
-	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
-</head>
-<body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
-	<main id="content">
-		<section>
-			<h1>Lab X - Subject/Topic</h1>
-			<div class="minor-section">
-					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
-			</div>
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding-left: 20px;
+				padding-bottom: 5px;
+			}
+			
+			nav ul a {
+				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				font-size: 25px;
+				color: rgb(88, 0, 57);
+				
+			}
+		
+		</style>
+		
+		<script type="text/javascript">
+			/* =============================
+			This script generates sample text for the body content. 
+			You can remove this script and any reference to it. 
+			 ============================= */
+			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+			function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+		</script>	
+	
+	</head>
+	
+	<body>		
 
-			<div class="minor-section">
-					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+		<header>
+			<div class="cushion">
+				<h4>Lab 2 - HTML & CSS Starter</h4>
 			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="cushion">
+						<h1>Hello World!</h1>
+						<p><script>generateText(20)</script></p>
+					</div>
+				</div>
+			</main>
+			
+			<nav>
+				<div class="cushion">
+					<ul>
+						<li><a href="https://digdogger.github.io/art101/">HOMEPAGE</a></li>
 
-			<div class="minor-section">
-					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
-			</div>
+					</ul>
 
-			<div class="minor-section">
-					<h2>Results</h2>
-					<div id="output"></div>
-			</div>
-		</section>
-		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
-		</nav>
-	</main>
-</body>
+					<ul>
+						<li><a href="#">LOOK AT THIS CAT</a></li>
+
+					</ul>
+
+					<ul>
+						<li><a href="#">Link 1</a></li>
+
+					</ul>
+				</div>
+			</nav>
+		
+		</div>
+
+	
+	</body>
 </html>
