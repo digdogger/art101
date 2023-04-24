@@ -59,6 +59,15 @@ h3 {
   background-color: #A3C9A8;
 
 }
+.output {
+  columns: 33% 3;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #A3C9A8;
+
+}
 .center {
   position: relative;
   left: 50%;
@@ -85,4 +94,20 @@ h3 {
   background-color: #6e6e6e;
   box-shadow: 0 5px #414141;
   transform: translateY(4px);
+}
+
+nav ul {
+  column-count: 12;
+  column-fill: balance;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+nav ul a {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  color: rgb(255, 17, 0);
+  cursor:crosshair
 }

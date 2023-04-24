@@ -3,157 +3,22 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="UTF-8" />
+	
+		<link rel="stylesheet" type="text/css" href="css/lab.css">
 		<title> Lab 2 </title>
-		<style type="text/css">
 		
-			body {
-				margin:0;
-				padding:0;
-				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-				line-height: 1.5em;
-			}
-			
-			header {
-				background: #ffd2f1;
-				height: 100px;
-			}
-
-			h1 {
-				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-				margin-top: 0;
-				padding-top: 35px;
-				text-align: center;
-				word-spacing: 5px;
-				text-decoration: underline;
-			}
-			h2 {
-				font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-				text-align: center;
-
-			}
-
-			h3 {
-				font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		
-			}
-
-			h4 {
-				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-				margin-top: 0;
-				padding-top: 35px;
-				text-align: center;
-				word-spacing: 5px;
-				font-size: 55px;
-			}
-			main {
-				padding-right: 55px;
-				padding-left: 55px;
-				padding-bottom: 10010px;
-				margin-bottom: -9000px;
-				float: left;
-				width: 100%;
-			}
-			
-			nav {
-				padding-top: 30px;
-				padding-bottom: 10010px;
-				margin-bottom: -9000px;
-				float: left;
-				width: 450px;
-				margin-left: -450px;
-				background: #ffe6f7;
-				height: 100%;
-			}
-			
-	
-			#wrapper {
-				overflow: hidden;
-			}
-						
-			#content {
-				margin-right: 450px;
-			}
-
-
-		    .cushion {
-				margin: 15px; /* Padding for content */
-				margin-top: 0;
-			}
-		
-			p {
-				color: #555;
-			}
-	
-			nav ul {
-				list-style-type: none;
-				margin: 0;
-				padding-left: 20px;
-				padding-bottom: 5px;
-			}
-			
-			nav ul a {
-				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-				font-size: 25px;
-				color: rgb(88, 0, 57);
-				
-			}
-		
-		</style>
-		
-		<script type="text/javascript">
-			/* =============================
-			This script generates sample text for the body content. 
-			You can remove this script and any reference to it. 
-			 ============================= */
-			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
-			function generateText(sentenceCount){
-				for (var i=0; i<sentenceCount; i++)
-				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
-			}
-		</script>	
 	
 	</head>
-	
-	<body>		
 
-		<header>
-			<div class="cushion">
-				<h4>Lab 2 - HTML & CSS Starter</h4>
-			</div>
-		</header>
+	<body>
+		<h1>A little canvas script to <span>add magic</span> to DOM elements!</h1>
+		<button class="sparkley">Everything's better with sparkles!</button>
+		<button class="sparkley last">I eat rainbows and poop butterflies!!</button>
 		
-		<div id="wrapper">
-		
-			<main>
-				<div id="content">
-					<div class="cushion">
-						<h1>Hello World!</h1>
-						<p><script>generateText(20)</script></p>
-					</div>
-				</div>
-			</main>
-			
-			<nav>
-				<div class="cushion">
-					<ul>
-						<li><a href="https://digdogger.github.io/art101/">HOMEPAGE</a></li>
+		<div class="img">
 
-					</ul>
-
-					<ul>
-						<li><a href="#">LOOK AT THIS CAT</a></li>
-
-					</ul>
-
-					<ul>
-						<li><a href="#">LOOK AT THIS DOG</a></li>
-
-					</ul>
-				</div>
-			</nav>
-		
+				<img id="image" src="https://source.unsplash.com/rW-I87aPY5Y/800x600"
 		</div>
-
-	
+		
+		<p>It won't work on images or DOM elements which cannot contain other elements, unless we wrap them.</p>
 	</body>
-</html>
