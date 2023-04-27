@@ -2,8 +2,14 @@
 
 .cat-photo {
   
-  margin-left: 33%;
+  margin-left: 32%;
+  margin-right: 40%;
   margin-top: 30px;
   max-width: 600px;
   border: inset 4px #282828;
+}
+.blood-gif {
+
+  max-width: 1427px;
+
 }

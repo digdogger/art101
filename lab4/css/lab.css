@@ -6,7 +6,7 @@ body {
   background-color: #b50000;
 }
 
-/* we can have rules apply to multiple elements at the same time with commas */
+
 h1,h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

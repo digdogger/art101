@@ -348,4 +348,18 @@ $.fn.imagesLoaded = function(callback){
  
   return this;
 };
+function newjayPage() {
+  location.replace("https://digdogger.github.io/art101/topsecret")
+}
+function validateForm() {
+  let x = document.forms["pass"]["fname"].value;
+  if (x == "") {
+    alert("Enter Password");
+    return false;
+  }
+  if (x == "horses") {
+    alert("Enter Password");
+    return false;
+  }
+} 
 
