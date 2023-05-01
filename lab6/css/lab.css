@@ -1,9 +1,141 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.car-photo {
+  
+  max-width: 350px;
+  border: inset 4px #282828;
+}
+body {
+  background-color: #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+h1,h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+h1 {
+  text-align: center;
+  word-spacing: 5px;
+  font-size: 300%;
+  color: #ce0808;
+  margin-top: 25px;
+  width: fit-content;
+  margin-left:28%;
+}
+h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  font-size: 250%;
+  color: #000000;
+  margin: 20px ;
+  text-decoration: underline;
+}
+h3 {
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 110%;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-top: -10px;
+  margin-right: 25%;
+  margin-left:25%;
+}
+h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 135%;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 25px;
+  padding-bottom: 10px;
+  border: solid 3px #940000;
+  background-color: #000000;
+}
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #A3C9A8;
+  padding-bottom: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.output {
+  column-count: 2;
+  column-fill: balance;
+  column-width: auto;
+
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: solid 3px #4d4d4d;
+  background-color: #A3C9A8;
+  padding: 65px;
+  font-size: larger;
+}
+.center {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+}
+.button {
+  background-color: #999999; 
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 15px;
+  box-shadow: 0 9px #727272;
+  margin-left: 45% ;
+}
+
+.button:hover {background-color: #d7c3c3}
+
+.button:active {
+  background-color: #6e6e6e;
+  box-shadow: 0 5px #414141;
+  transform: translateY(4px);
+}
+
+nav ul {
+  column-count: 12;
+  column-fill: balance;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+nav ul a {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  color: rgb(255, 17, 0);
+  cursor:crosshair
+}

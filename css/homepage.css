@@ -2,14 +2,24 @@
 
 .cat-photo {
   
-  margin-left: 32%;
-  margin-right: 40%;
+  /*! margin-left: 50%; */
+  /*! margin-right: 50%; */
   margin-top: 30px;
-  max-width: 600px;
+  max-width: 500px;
   border: inset 4px #282828;
+  /*! align-self: ; */
+  position: relative;
+  /*! display: flex; */
+  left: 50%;
+  transform: translate(-50%,0);
+  margin-bottom: -15px;
 }
 .blood-gif {
 
-  max-width: 1427px;
+  max-width: 1535px;
 
+  /*! flex-shrink: inherit; */
+  /*! flex-basis: inherit; */
+  /*! box-sizing: content-box; */
+  max-height: 24px;
 }

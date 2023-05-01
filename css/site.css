@@ -5,8 +5,17 @@
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
   background-color: #000000;
-  padding-left: 20px;
-  padding-right: 20px;
+  /*! padding-left: 20px; */
+  /*! padding-right: 20px; */
+  /*! border: #a30808; */
+  /*! border-width: 8px; */
+  /*! display: flex; */
+  /*! max-inline-size: 1576px; */
+  /*! max-block-size: 1576px; */
+  max-width: 1680px;
+  border-bottom: solid 5px #940000;
+  border-left: solid 5px #940000;
+  border-right: solid 6px #940000;
 }
 
 
@@ -19,12 +28,15 @@ h1,h2 {
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
   text-align: center;
-  word-spacing: 5px;
-  font-size: 300%;
+  word-spacing: 7px;
+  font-size: 350%;
   color: #a30808;
   margin-top: 25px;
   width: fit-content;
-  margin-left: 30.3%;
+  /*! margin-left: 30.3%; */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 h2 {
   text-align: center;
@@ -32,7 +44,11 @@ h2 {
   word-spacing: 3px;
   font-size: 250%;
   color: #000000;
-  margin: 20px ;
+  /*! margin: 20px ; */
+  display: grid;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0%);
 }
 h3 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -41,25 +57,34 @@ h3 {
   word-spacing: 1px;
   font-size: 125%;
   color: #000000;
-  margin-bottom: 55px;
-  margin-top: -15px;
+  /*! margin-bottom: 55px; */
+  \35 0: -15px;
+  display: grid;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
 }
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
-  margin: 25px;
-  padding-bottom: 10px;
-  border: solid 3px #940000;
-  background-color: #000000;
+  /*! margin: 25px; */
+  /*! padding-bottom: 26px; */
+  /*! border: solid 3px #940000; */
+  /*! background-color: #A3C9A8; */
+  margin-bottom: ;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-  align-items: center;
-  align-content: center;
+  /*! align-items: center; */
+  /*! align-content: center; */
   margin-bottom: 10px;
-  border: solid 1px #888;
+  /*! border: solid 1px #888; */
   background-color: #A3C9A8;
 
+  display: grid;
+  position: relative;
+  /*! width: unset; */
+  left: 33%;
 }
 .output {
   columns: 33% 3;
@@ -73,8 +98,9 @@ h3 {
 .center {
   position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 5px;
+  transform: translate(-50%, 0);
+  /*! padding: 5px; */
+  display: flex;
 }
 .button {
   background-color: #999999; 
@@ -82,12 +108,15 @@ h3 {
   padding: 12px 15px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: grid;
   font-size: 24px;
   font-family:'Courier New', Courier, monospace;
   border-radius: 15px;
   box-shadow: 0 9px #727272;
-  margin-left: 45% ;
+  /*! margin-left: 45% ; */
+  /*! align-self: center; */
+  /*! position: relative; */
+  left: 50%;
 }
 
 .button:hover {background-color: #d7c3c3}
@@ -103,13 +132,23 @@ nav ul {
   column-fill: balance;
   list-style-type: none;
   margin: 0;
-  padding-left: 20px;
-  padding-bottom: 5px;
+  /*! padding-left: 20px; */
+  padding-bottom: 10px;
+  background: black;
+  border-top: black;
+  border-top-width: 5px;
+  /*! display: ; */
+  /*! width: 1536px; */
+  /*! column-width: 8%; */
+  column-rule: #a30808;
+  column-rule-width: medium;
 }
 
 nav ul a {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 25px;
-  color: rgb(255, 17, 0);
-  cursor:crosshair
+  font-size: 29px;
+  color: rgb(225, 15, 0);
+  cursor:crosshair;
+  margin-right: 15px;
+  margin-left: 15px;
 }
