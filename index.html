@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 
-	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
+	<script type="text/javascript" src="./js/site.js" DEFER></script>
 </head>
 
 
@@ -34,12 +34,13 @@ header {
   	font-size: 50%;
 	word-spacing: 5px;
 	color: #a30808;
+	display: grid;
 
 }
-section {
-  display: -webkit-flex;
-  display: flex;
-}
+/*section {
+  /*display: -webkit-flex;
+  display: flex; */
+
 
 p {
 	font-size: 125%;
@@ -64,7 +65,7 @@ p {
 				<h1>WELCOME TO THE SLIMEFEST</h1>
 			</header>
 		</section>
-		<section style="border-left: solid 3px #940000;border-right: solid 3px #940000;border-top: solid 4px #940000;margin-left: 30px;background: #A3C9A8;margin-right: 30px;">
+		<section style="border-left: solid 3px #940000;border-bottom: solid 4px #940000;border-right: solid 3px #940000;border-top: solid 4px #940000;margin-left: 30px;background: #A3C9A8;margin-right: 30px;">
 
 
 			<div class="minor-section">
@@ -74,11 +75,11 @@ p {
 					<input type="text" id="pass" name="pass" required><br><br>
 					<input type="submit" value="Submit"
 				</form> -->
-				<img class="cat-photo" src="./img/possum.jpg" style="">
+				<img class="cat-photo" src="./img/possum.jpg">
 				<h2>Keep it Real, Keep it Juicy</h2>
 				<h3>call me newt. but my friends call me soupton. </h3>
-				<div class="center">
-					<button class="button" onclick="msg()">CLICK ME</button>
+				<div id="buttons">
+
 				</div>
 				
 				
@@ -95,14 +96,13 @@ p {
 				<li><a href="https://digdogger.github.io/art101/lab7/">LAB 7</a></li>
 				<li><a href="https://digdogger.github.io/art101/lab8/">LAB 8</a></li>
 				<li><a href="https://digdogger.github.io/art101/lab9/">LAB 9</a></li>
+				<li><a href="https://digdogger.github.io/art101/lab10/">LAB 10</a></li>
 			</ul>
 			
 		</nav>
 	</main>
 	<script>
-		function msg() {
-		  alert("<3 OwO love u <3");
-		}
+
 		function passFunction() {
 
 
