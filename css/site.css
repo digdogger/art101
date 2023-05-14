@@ -85,7 +85,7 @@ h3 {
   display: grid;
   position: relative;
   /*! width: unset; */
-  left: 33%;
+
 }
 .output {
   columns: 33% 3;
@@ -116,7 +116,7 @@ h3 {
   box-shadow: 0 9px #727272;
   /*! margin-left: 45% ; */
   /*! align-self: center; */
-  /*! position: relative; */
+  position: relative;
   left: 45%;
   margin-bottom: 30px;
 }

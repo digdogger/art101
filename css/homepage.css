@@ -9,7 +9,7 @@
   border: inset 4px #282828;
   /*! align-self: ; */
   position: relative;
-  /*! display: flex; */
+  /*display: grid; */
   left: 50%;
   transform: translate(-50%,0);
   margin-bottom: -15px;
