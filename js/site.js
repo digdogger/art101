@@ -22,46 +22,28 @@ main();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $('img.photo',this).imagesLoaded(myFunction)
-// execute a callback when all images have loaded.
-// needed because .load() doesn't work on cached images
- 
-// mit license. paul irish. 2010.
-// webkit fix from Oren Solomianik. thx!
- 
-// callback function is passed the last image to load
-//   as an argument, and the collection as `this`
- 
  
 
 function newjayPage() {
-  location.replace("https://digdogger.github.io/art101/topsecret")
+  
 }
-function validateForm() {
-  let x = document.forms["pass"]["fname"].value;
-  if (x == "") {
+function validateForm(passInput) {
+  
+  if (passInput == "") {
     alert("Enter Password");
     return false;
   }
-  if (x == "horses") {
-    alert("Enter Password");
-    return false;
+  if (passInput == "lavalamp") {
+    location.replace("https://digdogger.github.io/art101/topsecret");
+  }
+  if (passInput == "samhain") {
+    alert("OwO howdy! heres ur hint: 'a damn fine _________.' ");
+
+  }
+  else {
+    alert("INCORRECT PASSWORD. Are you even supposed to be going here?  ")
+    alert(" Enter the name of your cat to verify your identity and recieve a hint. ")
+
   }
 } 
 
@@ -77,3 +59,27 @@ button1.addEventListener("click", msg);
 buttonElement.appendChild(button1);
 
 
+
+
+var buttonHpEl = document.getElementById("buttonhp");
+var button2 = document.createElement("button");
+button2.innerHTML = "SUBMIT"
+button2.className = "button2";
+buttonHpEl.appendChild(button2);
+
+// find the form element
+inputEl = document.getElementById("password");
+console.log("input element:", inputEl);
+// find output element
+outputEl = document.getElementById("output");
+console.log("output element:", outputEl);
+var new1El = document.createElement("h4");
+new1El.innerHTML = "Your New Name: " ;
+
+
+// add an event listener to button
+button2.addEventListener("click", function(){
+  // get value from name element
+  var passInput = inputEl.value;
+  validateForm(passInput);
+});

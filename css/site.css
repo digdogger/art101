@@ -67,6 +67,48 @@ h3 {
   margin-bottom: 35px;
   margin-top: -15px;
 }
+h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 135%;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  display: grid;
+  position: relative;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+h5 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 110%;
+  color: #000000;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-right: 25%;
+  margin-left:25%;
+}
+
+h6 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 100%;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 10%;
+  margin-left: 75%;
+  position: relative;
+}
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
  /* #content {
   /*! margin: 25px; */
@@ -129,6 +171,42 @@ h3 {
   transform: translateY(4px);
 }
 
+.button2 {
+  background-color: #999999; 
+  color: white;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: grid;
+  font-size: 12px;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 15px;
+  box-shadow: 0 9px #727272;
+  /*! margin-left: 45% ; */
+  /*! align-self: center; */
+  position: relative;
+  left: 90%;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.button2:hover {background-color: #d7c3c3}
+
+.button2:active {
+  background-color: #6e6e6e;
+  box-shadow: 0 3px #414141;
+  transform: translateY(4px);
+}
+#user-name {
+  width: 220px;
+  position: relative;
+  transform: translate(350%,0%);
+}
+#password {
+  width: 220px;
+  position: relative;
+  transform: translate(561%,-135%);
+}
 nav ul {
   column-count: 12;
   column-fill: balance;
@@ -145,6 +223,7 @@ nav ul {
   /*! column-width: 8%; */
   column-rule: #a30808;
   column-rule-width: medium;
+  text-align: center;
 }
 
 nav ul a {
@@ -152,6 +231,4 @@ nav ul a {
   font-size: 29px;
   color: rgb(225, 15, 0);
   cursor:crosshair;
-  margin-right: 15px;
-  margin-left: 15px;
 }
