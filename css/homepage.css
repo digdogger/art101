@@ -4,24 +4,30 @@
   
   /*! margin-left: 50%; */
   /*! margin-right: 50%; */
-  margin-top: 30px;
   max-width: 500px;
   border: inset 4px #282828;
   /*! align-self: ; */
   position: relative;
   /*display: grid; */
   left: 50%;
-  transform: translate(-50%,0);
   margin-bottom: -15px;
+  margin-top: 10px;
+  /*! left: 15%; */
+  display: grid;
+  transform: translate(-49%,-10%);
 }
 .blood-gif {
 
-  max-width: 1605px;
+  max-width: 1750px;
 
   /*! flex-shrink: inherit; */
   /*! flex-basis: inherit; */
   /*! box-sizing: content-box; */
   max-height: 24px;
+  /*! min-width: 1600px; */
+  transform: translate(-2%,0%);
+  display: flex;
+  transform: translateX(-2%);
 }
 
 .mwah-gif {
@@ -37,6 +43,7 @@
   max-width: 300px;
   max-height: 40px;
 }
+
 .gir-gif {
   max-width: 200px;
   max-height: 200px;
@@ -46,4 +53,15 @@
   left: 50%;
   transform: translate(-50%,0);
   margin-bottom: -15px;
+}
+.snail-gif {
+  position: relative;
+  transform: translate(150%,25%);
+  max-width: 50px;
+  max-height: 50px;
+}
+.puter-gif {
+
+  width: 32px;
+  height: 32px;
 }
