@@ -33,10 +33,10 @@ function validateForm(passInput) {
     alert("Enter Password");
     return false;
   }
-  if (passInput == "temporary") {
+  if (passInput == "lavalamp") {
     location.replace("https://digdogger.github.io/art101/topsecret");
   }
-  if (passInput == "kaoru") {
+  if (passInput == "samhain") {
     alert("OwO howdy! heres ur hint: 'a damn fine _________.' ");
 
   }
