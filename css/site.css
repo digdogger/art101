@@ -108,6 +108,7 @@ h6 {
   position: relative;
   left: 80%;
   width: fit-content;
+  
 }
 
 .heading2 {
@@ -146,6 +147,13 @@ h6 {
   /*! width: unset; */
 
 }
+.heart-section {
+  margin-bottom: 10px;
+  background-image: url(https://digdogger.github.io/art101/img/pink-hearts.gif);
+  display: grid;
+  position: relative;
+}
+
 .login-linkbox {
   margin-bottom: 10px;
   background-color: #A3C9A8;
@@ -173,6 +181,10 @@ h6 {
   /*! padding: 5px; */
   display: flex;
 }
+
+.hidden { display: none; }
+.visible { display: block; }
+
 .button {
   background-color: #999999; 
   color: white;
@@ -190,8 +202,32 @@ h6 {
   left: 45%;
   margin-bottom: 30px;
 }
-
+.love-button {
+  background-color: #999999; 
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: grid;
+  font-size: 24px;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 15px;
+  box-shadow: 0 9px #727272;
+  /*! margin-left: 45% ; */
+  /*! align-self: center; */
+  position: relative;
+  left: 45%;
+  margin-bottom: 30px;
+}
 .button:hover {background-color: #d7c3c3}
+
+.love-button:hover {background-color: #d7c3c3}
+
+.love-button:active {
+  background-color: #6e6e6e;
+  box-shadow: 0 5px #414141;
+  transform: translateY(4px);
+}
 
 .button:active {
   background-color: #6e6e6e;

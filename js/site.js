@@ -48,13 +48,18 @@ function validateForm(passInput) {
 } 
 
 function msg() {
-  alert("<3 OwO love u <3");
+  ;
 }
+
+$("#love-button").click(function(){
+
+  $(this).parent().toggleClass("special");
+})
 
 var buttonElement = document.getElementById("buttons");
 var button1 = document.createElement("button");
 button1.innerHTML = "CLICK ME"
-button1.className = "button";
+button1.className = "love-button";
 button1.addEventListener("click", msg);
 buttonElement.appendChild(button1);
 

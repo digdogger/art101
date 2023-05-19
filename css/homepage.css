@@ -61,7 +61,12 @@
   max-height: 50px;
 }
 .puter-gif {
+  position: relative;
 
   width: 32px;
   height: 32px;
+}
+.pink-heart-bg{
+  width: 1500px;
+  height: 850px;
 }
