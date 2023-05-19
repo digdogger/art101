@@ -109,6 +109,23 @@ h6 {
   left: 80%;
   width: fit-content;
 }
+
+.heading2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image:url("C:\Users\cinna\OneDrive\Documents\gitrepos\art101\img\redsparkles.gif");
+  text-align: center;
+  word-spacing: 7px;
+  font-size: 350%;
+  margin-top: 25px;
+  width: fit-content;
+  /*! margin-left: 30.3%; */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
  /* #content {
   /*! margin: 25px; */
