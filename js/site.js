@@ -47,23 +47,30 @@ function validateForm(passInput) {
   }
 } 
 
-function msg() {
-  ;
-}
+//function bghearts() {
+ // bgEl.setAttribute = ("minor-section", "heart-section");
+//}
+
+$("#basic-section").append("<button id='love-button'>CLICK ME</button>");
+
+
+$("#love-button").toggleClass("love-button");
 
 $("#love-button").click(function(){
 
-  $(this).parent().toggleClass("special");
+  $(this).parent().toggleClass("heart-section");
 })
 
-var buttonElement = document.getElementById("buttons");
-var button1 = document.createElement("button");
-button1.innerHTML = "CLICK ME"
-button1.className = "love-button";
-button1.addEventListener("click", msg);
-buttonElement.appendChild(button1);
 
 
+//var buttonElement = document.getElementById("buttons");
+//var button1 = document.createElement("button");
+//button1.innerHTML = "CLICK ME" ;
+//button1.className = "love-button";
+//button1.addEventListener("click", bghearts);
+//buttonElement.appendChild(button1);
+
+//var bgEl = document.getElementById("minor-section")
 
 
 var buttonHpEl = document.getElementById("buttonhp");

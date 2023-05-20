@@ -12,8 +12,13 @@
 
 	<!-- Include a sitewide CSS file for consistent styling across the site -->
 	<link rel="stylesheet" type="text/css" href="css/site.css">
+
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 
 	<script type="text/javascript" src="./js/site.js" DEFER></script>
@@ -34,22 +39,20 @@
 			<img class="snail-gif" src="./img/0058-snail.gif">
 			<img class="puter-gif" src="./img/0092-computerconnect.gif" style="left: 67%;bottom: 45px;">
 		</section>
-		<section style="border-left: solid 3px #940000;border-right: solid 3px #940000;border-top: solid 4px #940000;margin-left: 30px;background: #A3C9A8;margin-right: 30px;border-bottom: solid 3px #940000;">
+		<div id="basic-section" class="minor-section" style="border-left: solid 3px #940000;border-right: solid 3px #940000;border-top: solid 4px #940000;margin-left: 30px;margin-right: 30px;border-bottom: solid 3px #940000;">
 
 
-			<div class="minor-section">
-				<h6>Login:</h6>
-				<input type="text" id="password"><br>
-				<div id="buttonhp"></div>
-
-				<img class="cat-photo" src="./img/possum.jpg" style=>
-				<h2>Keep it Real, Keep it Juicy</h2>
-				<h3>call me newt. but my friends call me soupton. </h3>
-				<div id="buttons">
-				</div>
+			
+			<h6>Login:</h6>
+			<input type="text" id="password"><br>
+			<div id="buttonhp"></div>
+			<img class="cat-photo" src="./img/possum.jpg" style=>
+			<h2>Keep it Real, Keep it Juicy</h2>
+			<h3>call me newt. but my friends call me soupton. </h3>
+			
 				
 				
-			</div>
+		</div>
 			
 		</section>
 		<nav id="links" style="/*! border-color: #a30808; */border-top-color: #a30808;border-top-width: medium;">
