@@ -9,10 +9,7 @@ maxFactors = 4;
 
 outputEl = document.getElementById("output");
 
-// get the values from the webpage and write them in an object
-// this expects to have input fields with ids num0, text0, num1, text1, etc
-// returns an object that looks like this:
-//      {3: "Fizz", 5: "Buzz", 7: "Boom"}
+
 function getFactorObj() {
     var factorObj = {};
     for (var factor=0; factor<maxFactors; factor++) {
@@ -21,7 +18,6 @@ function getFactorObj() {
         numValue = document.getElementById(numId).value;
         textValue = document.getElementById(textId).value;
         console.log(factor + ") num:", numValue, "text:", textValue)
-        // if either value is blank, don't use it
         if (numValue && textValue) {
             factorObj[numValue] = textValue;
         }
