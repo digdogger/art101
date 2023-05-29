@@ -70,3 +70,14 @@
   width: 1500px;
   height: 850px;
 }
+.ss-photo {
+
+  max-width: 500px;
+  border: inset 4px #282828;
+  position: relative;
+  left: 50%;
+  margin-bottom: -15px;
+  margin-top: 10px;
+  display: grid;
+  transform: translate(-49%,-10%);
+}
