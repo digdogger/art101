@@ -21,7 +21,7 @@ h1 {
   color: #ce0808;
   margin-top: 25px;
   width: fit-content;
-  margin-left:18%;
+  margin-left:25%;
 }
 h2 {
   text-align: center;
@@ -119,7 +119,7 @@ h4 {
 }
 
 nav ul {
-  column-count: 12;
+  column-count: 14;
   column-fill: balance;
   list-style-type: none;
   margin: 0;

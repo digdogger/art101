@@ -17,7 +17,7 @@ h1 {
   color: #ce0808;
   margin-top: 25px;
   width: fit-content;
-  margin-left:39%;
+  margin-left:40%;
 }
 h2 {
   text-align: center;
@@ -143,6 +143,26 @@ th {
   background-color: #A3C9A8;
   padding: 25px;
   font-size: larger;
+}
+
+.cols {
+  column-count: 8;
+  column-fill: balance;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:left;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 110%;
+  color: #000000;
+}
+.error {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 110%;
+  color: #000000;
+
 }
 .center {
   position: relative;
@@ -271,7 +291,7 @@ th {
   transform: translateY(4px);
 }
 nav ul {
-  column-count: 12;
+  column-count: 14;
   column-fill: balance;
   list-style-type: none;
   margin: 0;

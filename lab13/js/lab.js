@@ -33,7 +33,7 @@ function outputToPage(str) {
 
 
 function fizzBuzzBoom(maxNums, factorObj) {
-  for (var num=0; num<maxNums; num++) {
+  for (var num=0; num<=maxNums; num++) {
     debugger;
     var outputStr ="";
     for (var factor in factorObj) {
@@ -56,13 +56,17 @@ document.getElementById("submit").addEventListener("click", function() {
   var max = document.getElementById("max").value;
   console.log("max:", max)
   if (! max) {
-  reportError("You must provide a maximum");
+  reportError("Hey! We need a maxium number to run this thing!");
     return;
   }
+  if (max>500) {
+    reportError("Sorry bud. We cap the cap at 500.");
+      return;
+    }
   var factorObj = getFactorObj();
   console.log("factorObj:", factorObj);
   if (Object.keys(factorObj).length === 0) {
-    reportError("You must provide at least one factor and text");
+    reportError("Well what am I supposed to do with so little info. AT LEAST give me one factor and a word to go with it....");
     return;
   }
   outputEl.innerHTML = "";

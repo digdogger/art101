@@ -273,7 +273,7 @@ h6 {
   transform: translate(540%,-135%);
 }
 nav ul {
-  column-count: 12;
+  column-count: 14;
   column-fill: balance;
   list-style-type: none;
   margin: 10px; 
@@ -285,7 +285,6 @@ nav ul {
   border-top-width: 5px;
   /*! display: ; */
   /*! width: 1536px; */
-  /*! column-width: 8%; */
   column-rule: #a30808;
   column-rule-width: medium;
   text-align: center;
