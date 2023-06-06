@@ -250,6 +250,23 @@ th {
 .problem-button:hover {background-color: #d7c3c3}
 .results-button:hover {background-color: #d7c3c3}
 
+.cat-photo {
+  
+  /*! margin-left: 50%; */
+  /*! margin-right: 50%; */
+  max-width: 500px;
+  border: inset 4px #282828;
+  /*! align-self: ; */
+  position: relative;
+  /*display: grid; */
+  left: 50%;
+  margin-bottom: -15px;
+  margin-top: 10px;
+  /*! left: 15%; */
+  display: grid;
+  transform: translate(-49%,-10%);
+}
+
 .button:active {
   background-color: #6e6e6e;
   box-shadow: 0 5px #414141;

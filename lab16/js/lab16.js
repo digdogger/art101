@@ -32,7 +32,7 @@ function getComic(num) {
   })
   // If the request succeeds
   .done(function(data) {
-      // console.log(data);
+    
       var imageUrl = data.img;
       var title = data.title;
       console.log("orig title:", title);
@@ -45,16 +45,16 @@ function getComic(num) {
       var comicNum = data.num;
       var html = `<div id="imageblock">
           <h2>${title}</h2>
-          <img src="${imageUrl}" title="${alt}"><br>
-          <button id="prev">Previous</button><button id="next">Next</button>
+          <<img class="cat-photo" img src="${imageUrl}" title="${alt}"><br>
+          <button id="prev" style="transform: translate(1000%);">Previous</button><button id="next" style="transform: translate(1300%);">Next</button>
         </div>`
       $("#output").html(html);
 
-      // add event listener to new prev button
+  
       $("#prev").click(function(){
         getComic(comicNum - 1);
       });
-      // add event listener to new next button
+   
       $("#next").click(function(){
         getComic(comicNum + 1);
       });
